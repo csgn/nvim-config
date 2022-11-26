@@ -2,6 +2,8 @@
 --
 local fn = vim.fn
 
+
+
 -- Automatically install packer
 local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
@@ -50,6 +52,7 @@ return packer.startup(function(use)
 	use 'bluz71/vim-moonfly-colors'
 	use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
 	use "numToStr/Comment.nvim" -- Easily comment stuff
+	use { 'kartikp10/noctis.nvim', requires = { 'rktjmp/lush.nvim' } }
 
 
     -- Telescope
@@ -84,6 +87,8 @@ return packer.startup(function(use)
 
 	-- COC
 	use {'neoclide/coc.nvim', branch = 'release'}
+
+	use 'matbme/JABS.nvim'
 
 
 	  -- Automatically set up your configuration after cloning packer.nvim

@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/csgn/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
+  ["JABS.nvim"] = {
+    loaded = true,
+    path = "/home/csgn/.local/share/nvim/site/pack/packer/start/JABS.nvim",
+    url = "https://github.com/matbme/JABS.nvim"
+  },
   ["coc.nvim"] = {
     loaded = true,
     path = "/home/csgn/.local/share/nvim/site/pack/packer/start/coc.nvim",
@@ -89,6 +94,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/csgn/.local/share/nvim/site/pack/packer/start/hop.nvim",
     url = "https://github.com/phaazon/hop.nvim"
+  },
+  ["lush.nvim"] = {
+    loaded = true,
+    path = "/home/csgn/.local/share/nvim/site/pack/packer/start/lush.nvim",
+    url = "https://github.com/rktjmp/lush.nvim"
+  },
+  ["noctis.nvim"] = {
+    loaded = true,
+    path = "/home/csgn/.local/share/nvim/site/pack/packer/start/noctis.nvim",
+    url = "https://github.com/kartikp10/noctis.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
