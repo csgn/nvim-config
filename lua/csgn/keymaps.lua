@@ -71,5 +71,11 @@ vim.keymap.set('', 'F', function()
 end)
 
 
+-- Nvimtree
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+--keymap("n", "<leader>t", ":NvimTreeFocus<cr>", opts)
 
 
+-- Navigate buffers
+keymap("n", "<S-l>", ":BufferLineCycleNext<CR>", opts)
+keymap("n", "<S-h>", ":BufferLineCyclePrev<CR>", opts)

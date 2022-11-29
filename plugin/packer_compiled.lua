@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/csgn/.local/share/nvim/site/pack/packer/start/JABS.nvim",
     url = "https://github.com/matbme/JABS.nvim"
   },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/home/csgn/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
   ["coc.nvim"] = {
     loaded = true,
     path = "/home/csgn/.local/share/nvim/site/pack/packer/start/coc.nvim",
@@ -94,6 +99,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/csgn/.local/share/nvim/site/pack/packer/start/hop.nvim",
     url = "https://github.com/phaazon/hop.nvim"
+  },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/csgn/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["lush.nvim"] = {
     loaded = true,
@@ -109,6 +119,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/csgn/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
     url = "https://github.com/windwp/nvim-autopairs"
+  },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/home/csgn/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,

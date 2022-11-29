@@ -40,8 +40,8 @@ keyset("i", "<c-space>", "coc#refresh()", {silent = true, expr = true})
 
 
 -- Formatting selected code.
-keyset("x", "<leader>l", "<Plug>(coc-format-selected)", {silent = true})
-keyset("n", "<leader>l", "<Plug>(coc-format-selected)", {silent = true})
+--keyset("x", "<leader>l", "<Plug>(coc-format-selected)", {silent = true})
+keyset("n", "<leader>l", ":CocCommand prettier.forceFormatDocument<CR>", {silent = true})
 
 
 -- Highlight the symbol and its references when holding the cursor.
@@ -69,3 +69,16 @@ keyset("n", "gr", "<Plug>(coc-references)", {silent = true})
 
 -- Add `:Format` command to format current buffer.
 vim.api.nvim_create_user_command("Format", "call CocAction('format')", {})
+
+-- Remap <C-f> and <C-b> for scroll float windows/popups.
+---@diagnostic disable-next-line: redefined-local
+local opts = {silent = true, nowait = true, expr = true}
+keyset("n", "<C-f>", 'coc#float#has_scroll() ? coc#float#scroll(1) : "<C-f>"', opts)
+keyset("n", "<C-b>", 'coc#float#has_scroll() ? coc#float#scroll(0) : "<C-b>"', opts)
+keyset("i", "<C-f>",
+       'coc#float#has_scroll() ? "<c-r>=coc#float#scroll(1)<cr>" : "<Right>"', opts)
+keyset("i", "<C-b>",
+       'coc#float#has_scroll() ? "<c-r>=coc#float#scroll(0)<cr>" : "<Left>"', opts)
+keyset("v", "<C-f>", 'coc#float#has_scroll() ? coc#float#scroll(1) : "<C-f>"', opts)
+keyset("v", "<C-b>", 'coc#float#has_scroll() ? coc#float#scroll(0) : "<C-b>"', opts)
+

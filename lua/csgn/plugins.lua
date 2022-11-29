@@ -90,6 +90,12 @@ return packer.startup(function(use)
 
 	use 'matbme/JABS.nvim'
 
+  	use 'nvim-lualine/lualine.nvim'
+
+	use 'kyazdani42/nvim-tree.lua'
+
+	use "akinsho/bufferline.nvim"
+
 
 	  -- Automatically set up your configuration after cloning packer.nvim
 	  -- Put this at the end after all plugins
