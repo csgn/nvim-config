@@ -22,7 +22,8 @@ configs.setup {
     "make",
     "tsx",
     "typescript",
-    "vue"
+    "vue",
+	 "rust",
   },
   sync_install = false, 
   ignore_install = { "" }, -- List of parsers to ignore installing

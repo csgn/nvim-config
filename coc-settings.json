@@ -1,4 +1,15 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "js", "lua", "python", "sql", "yaml"]
-}
-
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "javascript",
+    "lua",
+    "python",
+    "sql",
+    "yaml",
+	 "rust",
+  ],
+	"python.linting.enabled": true,
+	"python.linting.pylintEnabled": true,
+	"python.formatting.provider": "autopep8"
+},

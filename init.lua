@@ -1,5 +1,6 @@
 --- csgn nvim config
 --
+--
 
 require "csgn.options"
 require "csgn.keymaps"
